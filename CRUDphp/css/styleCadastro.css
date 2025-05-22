@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-top: 6.25rem;
+    flex: 1;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/alunoForm.png'); /* ajuste o caminho se necessário */
+    background-size: cover; /* ← ou use "cover", dependendo do que você quer */
+    object-position: top;
+    background-position: left;
+    background-repeat: no-repeat;   
+    z-index: -1;
+}
+
+input {
+    border-radius: 20px;
+}
+
+.button {
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #e76f00;
+}
+
+.button:hover{
+    width: 110px;
+    height: 40px;
+}
+
+#buttonR {
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+#buttonR:hover {
+    height: 35px;
+    width: 160px;
+}
+
+#buttonRe {
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+#buttonRe:hover {
+    height: 35px;
+    width: 160px;
+}
+
+.escondido {
+    display: none;
+}
+
+i {
+    margin-right: 1em !important;
+    display: inline-block;
+}
+
+/* Tablet e Mobile */
+@media (max-width: 768px) {
+    .imagem {
+        filter: brightness(0.5);
+    }
+    .data h2 {
+        color: #ffffff;
+    }
+    }
