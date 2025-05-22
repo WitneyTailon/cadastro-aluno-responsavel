@@ -331,6 +331,9 @@
                     </button>
                 <?php endif; ?>
             </div>
+            <button class="voltar-btn">
+                <a href="router.php?rota=listar">Voltar</a>
+            </button>
         </section>
     </main>
 
